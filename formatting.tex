@@ -1,0 +1,82 @@
+% This file contains all formatting for the file
+
+
+\usepackage{multicol}
+\usepackage{lipsum}
+\usepackage{graphicx} %Allows pics to be included
+\graphicspath{{./images/}}      %Use this if pictures kept within seperate folder, the first ./ is not mandatory but should be used
+%\graphicspath{ {c:/user/images/} } Could also do absolute path like this
+%\graphicspath{ {./images1/}{./images2/} } for multiple paths
+\usepackage{fancyhdr} %allows for more customization of headers/footers
+\usepackage{booktabs} %used for /toprule command
+\usepackage{wrapfig} %allows for wrapped figures
+%\usepackage[parfill]{parskip} %Stops random indents in new paragraphs %Just do it myself, it seems to break the program
+\usepackage{float} %Used to stop figures from moving around so much
+\usepackage{caption} %allows for more captions tools
+\usepackage{titling} %for using \thetitle command in Header
+\usepackage{gensymb} %for using degree symbol
+\setcounter{secnumdepth}{0} %remove seciton numbers
+
+
+%\renewcommand{\headrulewidth}{0.4pt}% Default \headrulewidth is 0.4pt
+%not really sure what this was from
+
+
+%\makeatletter\typeout{\Ginput@path}\makeatother
+%This is supposed to show whats in a folder or something?
+
+
+%Margins
+\usepackage[margin=0.8in]{geometry}
+%The following would manually change the margins to 1 in
+%\addtolength{\oddsidemargin}{-.875in} %Even and odd sided pages have different margins in LaTeX
+%\addtolength{\evensidemargin}{-.875in}
+%\addtolength{\textwidth}{1.75in}
+%\addtolength{\topmargin}{-.875in}
+%\addtolength{\textheight}{1.75in} % Apparently dont need to change bottom margin?
+
+
+
+% COMMANDS
+
+% \pic{pic}{caption}{label}{width}
+\newcommand{\pic}[4]{\begin{figure}[H]
+\centering
+\includegraphics[width = #4cm]{#1}
+\caption{#2}
+\label{#3}
+\end{figure}}
+
+% \twopics{pic1}{pic2}{caption1}{caption2}
+\newcommand{\twopics}[4]{\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.45\textwidth}
+    \includegraphics[width=\textwidth]{#1}
+    \caption{#3}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.45\textwidth}
+    \includegraphics[width=\textwidth]{#2}
+    \caption{#4}
+  \end{minipage}
+\end{figure}}
+
+% \wrappic{pic}{caption}{size}{side}
+\newcommand{\wrappic}[4]{\begin{wrapfigure}{#4}{#3\textwidth}
+\vspace{-20pt}
+\begin{center}
+\includegraphics[width = #3\textwidth]{#1}
+\end{center}
+\vspace{-10pt}
+\caption{#2}
+\vspace{10pt}
+\end{wrapfigure}}
+
+
+
+
+
+
+
+
+

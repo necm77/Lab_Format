@@ -1,0 +1,221 @@
+\documentclass{article}
+
+\input{formatting}
+% \include{filename} is used to input the actual file, like another chapter right into a file
+
+
+%Title
+
+%stuff i found online https://tex.stackexchange.com/questions/328094/easy-way-to-change-title-author-styles
+\pretitle{% add some rules
+  \begin{center}
+    \huge\bfseries
+}%, make the fonts bigger, make the title (only) bold
+\posttitle{%
+  \end{center}%
+  \noindent\vrule height 2.5pt width \textwidth
+  \vskip 5.75em plus .25em minus .25em% increase the vertical spacing a bit, make this particular glue stretchier
+  \begin{center}
+  \large{Queen's University\\}
+  \vskip 0.75em
+  \large{Department of Electrical and Computer Engineering\\}
+  \vskip 2.75em
+  \large{GENERAL NAME FOR PROJECT/LAB\\}
+  \vskip 0.75em
+  \large{Instructor: INSTRUCTORS NAME\\}
+  \vskip 2.75em plus .25em minus .25em
+  \end{center}
+
+}
+\preauthor{%
+  \begin{center}
+    \LARGE \lineskip 0.75em%
+    %\vrule height 0.4pt width .25\textwidth\par
+    %\begin{tabular}[t]{@{}l@{}}%
+}
+\postauthor{%
+    %\end{tabular}
+    \vskip 3.5em
+    \par
+   % \vrule height 0.4pt width .25\textwidth\par
+  \end{center}%
+}
+\predate{%
+  \begin{center}
+    \Large
+}
+\postdate{%
+  \end{center}%
+}
+
+\title{ELEC BLANK Lab NUM Report - LAB NAME} %Or just use lab name, but ELEC... above
+\author{Nick Totman, 20072196\\ Other Person1, Student \#\\ Other Person2, Student \#}
+\date{\today}
+
+
+
+%Headers/Footers
+\pagestyle{fancy} %headers and footers
+\fancyhf{} %clears standard header/footer contents
+\fancyhf[ch]{\thetitle}
+\fancyhf[rf]{Page \thepage}
+
+%\chead{\thetitle{}} OLD
+%\rfoot{Page \thepage} OLD
+%Change Header/Footer Line sizes
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand{\footrulewidth}{1pt}
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\pagenumbering{gobble} %remove page numbers from title page
+
+%Title Page
+%SOMEHOW THIS WORKED IDK HOW TBH
+\begin{titlepage}
+\maketitle
+\end{titlepage}
+%\thispagestyle{fancy} % All pages have headers and footers
+%Would give title page a header
+
+%Table of Contents
+\tableofcontents   %Needs to be run a second time to work
+
+\pagebreak
+
+
+
+\pagenumbering{arabic} %turn page numbers back on
+
+
+%Sample Abstract
+\begin{abstract}
+
+\noindent TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT \cite{einstein} \cite{latexcompanion} \cite{knuthwebsite}. %Names taken from refs.bib
+
+\end{abstract}
+\vspace{0.25in}
+
+\section{Introduction}
+%\section*{Introduction} the * does not allow for capture by table of contents, instead numbers removed in formatting.tex
+%\section{Introduction} Having no * would number the sections
+
+TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT 
+
+
+\section{Results}
+
+TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT 
+
+\section{Discussion}
+
+TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT 
+%Same thing but in multiple columns
+\begin{multicols}{2}
+\noindent COLUMNS COLUMNS COLUMNS here is the difference COLUMNS COLUMNS COLUMNS another difference COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS COLUMNS 
+\end{multicols}
+
+\section{Conclusions}
+TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT 
+
+
+
+\section{Pictures!}
+
+TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT 
+
+
+\begin{wrapfigure}{r}{0.5\textwidth}
+\begin{center}
+\includegraphics[width = 0.48\textwidth]{black}
+\end{center}
+\caption{Wrapped Black Picture}
+\end{wrapfigure}
+
+\noindent TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT 
+
+\wrappic{black}{Wrapped Black Picture}{0.4}{l}
+
+\noindent TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT 
+ 
+
+\begin{figure}[H]% [] tells it where to put figure h=(here), H puts it exactly where I want it
+%could also use t(top), b(bottom), p(page)(put on special page for floats only), !(override LATEX for "good" position)
+\centering
+\includegraphics[width=6cm, angle = 45]{black}
+\caption{A Black .png at some weird angle}
+\end{figure}
+
+Same ish thing, but with a command.
+\pic{black}{Blank Caption}{cap}{5}
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.45\textwidth}
+    \includegraphics[width=\textwidth]{black}
+    \caption{Black1}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.45\textwidth}
+    \includegraphics[width=\textwidth]{black}
+    \caption{Black2}
+  \end{minipage}
+\end{figure}
+
+Same thing, but with a command.
+\twopics{black}{black}{Black1}{Black2}
+
+%If Needed
+\section{Participation effort}
+
+\begin{table}[H]
+	\renewcommand\arraystretch{1.2}
+	\caption{Group Member Contributions}
+	\begin{center}
+		\begin{tabular}{lc | c}
+			\toprule
+			& \hspace{1in} & Effort	\\
+			\hline 				
+			Nick Totman		&& 	\%	33.33...	\\
+			Other Person1  		&& 	\%	33.33...	\\
+			Other Person2		&& 	\%	33.33...	\\
+
+			\bottomrule
+			Total				&& \% 100
+		\end{tabular}
+	\end{center}
+	\label{default}
+\end{table}
+
+\pagebreak
+
+%Citations
+% Don't forget to actually use the citations in text for them to be used
+% Run pdflatex, bibtex, then pdflatex x2 to complete
+\bibliographystyle{ieeetr}
+\bibliography{refs}
+
+%ISSUE LOG/TODO
+% 1. lots of times it doesnt put stuff in order when creating pdf, for example, the figure above ends up below the table 	(USE [H])
+% 2. wrap figure doesnt work 																	(DONT USE LIPSUM)
+% 3. Title page needs work 																	(GOOD)
+% 4. Citations need work https://www.overleaf.com/learn/latex/Bibliography_management_in_LaTeX (it wont print?) (USING THE BIBTEX VERSION CURRENTLY) (to show up, run pdflatex, bib tex, pdflatex, pdflatex in that order) 								(WOKRS)
+% 5. Figures could do with being linked better for referencing
+% 6. Check on package differences
+% 7. Table of contents (with .......)
+% 9. Consider importing all of the formatting, etc. through use of \input{filename}								(DONE)
+% 10. Reference Figures better
+% 11. Label commands (i.e. label the figures used)
+
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
