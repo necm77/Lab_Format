@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex Lab_Template"] 1582272136 "Lab_Template.aux" "Lab_Template.bbl" "Lab_Template" 1592796134
+["bibtex Lab_Template"] 1582272136 "Lab_Template.aux" "Lab_Template.bbl" "Lab_Template" 1592797238
   "C:/Users/nickt/AppData/Local/Programs/MiKTeX 2.9/bibtex/bst/bibtex/ieeetr.bst" 1291864344 18361 1a00e58565e7f19bf2b3e1bfb82254ae ""
-  "Lab_Template.aux" 1592796133 1904 6a42bcff90f85b5a8ceb11f497c48b36 "pdflatex"
+  "Lab_Template.aux" 1592797237 1904 6a42bcff90f85b5a8ceb11f497c48b36 "pdflatex"
   "refs.bib" 1575498920 847 8bd6fea3caaa65c4275840e26e13e84c ""
   (generated)
-  "Lab_Template.bbl"
   "Lab_Template.blg"
-["pdflatex"] 1592796129 "c:/Users/nickt/OneDrive - Queen's University/Queens Stuff/LaTeX Template/Lab_Template.tex" "c:/Users/nickt/OneDrive - Queen's University/Queens Stuff/LaTeX Template/Lab_Template.pdf" "Lab_Template" 1592796134
+  "Lab_Template.bbl"
+["pdflatex"] 1592797235 "c:/Users/nickt/OneDrive - Queen's University/Queens Stuff/LaTeX Template/Lab_Template.tex" "c:/Users/nickt/OneDrive - Queen's University/Queens Stuff/LaTeX Template/Lab_Template.pdf" "Lab_Template" 1592797238
   "C:/Users/nickt/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt" 1579547142 4275080 584c5534e59146b6b51c658f733fb77a ""
   "C:/Users/nickt/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map" 1585690153 82785 70f9e036b84f42719a038a146cecceca ""
   "C:/Users/nickt/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/jknappen/ec/ectt1000.tfm" 993062340 1348 d70ddf2d5d512b838e50a335e385e919 ""
@@ -72,19 +72,19 @@
   "C:/Users/nickt/AppData/Local/Programs/MiKTeX 2.9/tex/latex/was/gensymb.sty" 1081526300 4755 4a45a1ba5fd7b0c48ab0c1f124453b38 ""
   "C:/Users/nickt/AppData/Local/Programs/MiKTeX 2.9/tex/latex/wrapfig/wrapfig.sty" 1044403200 26220 3701aebf80ccdef248c0c20dd062fea9 ""
   "C:/Users/nickt/AppData/Local/Programs/MiKTeX 2.9/tex/latex/xcolor/xcolor.sty" 1463135581 57049 74963e80d77be39a0b7442967b27c75b ""
-  "Lab_Template.aux" 1592796133 1904 6a42bcff90f85b5a8ceb11f497c48b36 "pdflatex"
+  "Lab_Template.aux" 1592797237 1904 6a42bcff90f85b5a8ceb11f497c48b36 "pdflatex"
   "Lab_Template.bbl" 1582272136 495 0a33dd881ae51ef40d13e120e48ab16b "bibtex Lab_Template"
-  "Lab_Template.tex" 1592796037 12783 f98302b3af65b22f7c533a6ccd12e4a1 ""
-  "Lab_Template.toc" 1592796133 249 6ee6de290ceea14a20f36a56092301b8 "pdflatex"
-  "c:/Users/nickt/OneDrive - Queen's University/Queens Stuff/LaTeX Template/Lab_Template.aux" 1592796133 1904 6a42bcff90f85b5a8ceb11f497c48b36 "pdflatex"
-  "c:/Users/nickt/OneDrive - Queen's University/Queens Stuff/LaTeX Template/Lab_Template.tex" 1592796037 12783 f98302b3af65b22f7c533a6ccd12e4a1 ""
+  "Lab_Template.tex" 1592797233 12815 a41f06a95cce5860d9125ada79f37a09 ""
+  "Lab_Template.toc" 1592797237 249 6ee6de290ceea14a20f36a56092301b8 "pdflatex"
+  "c:/Users/nickt/OneDrive - Queen's University/Queens Stuff/LaTeX Template/Lab_Template.aux" 1592797237 1904 6a42bcff90f85b5a8ceb11f497c48b36 "pdflatex"
+  "c:/Users/nickt/OneDrive - Queen's University/Queens Stuff/LaTeX Template/Lab_Template.tex" 1592797233 12815 a41f06a95cce5860d9125ada79f37a09 ""
   "formatting.tex" 1592796127 2743 624d8dbae96ec660060b8e24c61411ae ""
   "images/black.jpg" 1570845561 102765 88de5e321670b43297548bccc2f4c63e ""
   (generated)
-  "c:/Users/nickt/OneDrive - Queen's University/Queens Stuff/LaTeX Template/Lab_Template.aux"
-  "Lab_Template.aux"
-  "Lab_Template.toc"
-  "c:/Users/nickt/OneDrive - Queen's University/Queens Stuff/LaTeX Template/Lab_Template.pdf"
   "Lab_Template.log"
+  "c:/Users/nickt/OneDrive - Queen's University/Queens Stuff/LaTeX Template/Lab_Template.pdf"
   "Lab_Template.pdf"
   "c:/Users/nickt/OneDrive - Queen's University/Queens Stuff/LaTeX Template/Lab_Template.log"
+  "Lab_Template.toc"
+  "c:/Users/nickt/OneDrive - Queen's University/Queens Stuff/LaTeX Template/Lab_Template.aux"
+  "Lab_Template.aux"
